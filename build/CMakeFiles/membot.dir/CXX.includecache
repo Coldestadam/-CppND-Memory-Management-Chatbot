@@ -82,11 +82,23 @@ string
 chatgui.h
 /Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/chatgui.h
 
+/Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/graphedge.cpp
+graphnode.h
+/Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/graphnode.h
+graphedge.h
+/Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/graphedge.h
+
 /Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/graphedge.h
 vector
 -
 string
 -
+
+/Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/graphnode.cpp
+graphedge.h
+/Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/graphedge.h
+graphnode.h
+/Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/graphnode.h
 
 /Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/graphnode.h
 vector
