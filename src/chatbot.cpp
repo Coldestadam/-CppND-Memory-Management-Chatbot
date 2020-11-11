@@ -48,17 +48,18 @@ ChatBot::~ChatBot()
 // Copying Constructor
 ChatBot::ChatBot(const ChatBot &source)
 {
-    std::cout << "COPYING content of instance " << &source << " to instance " << this << std::endl;
-    *_image = *source._image;
-    *_chatLogic = *source._chatLogic;
-    *_rootNode = *source._rootNode;
-    *_currentNode = *source._currentNode;
+    std::cout << "ChatBot Copy Constructor" << std::endl;
+    _image = new wxBitmap(*source._image);
+    _chatLogic = source._chatLogic;
+    _rootNode = source._rootNode;
+    _currentNode = source._currentNode;
+    _chatLogic->SetChatbotHandle(this);
 }
 
 // Copying Assignment Operator
 ChatBot& ChatBot::operator=(const ChatBot &source)
 {
-    std::cout << "ASSIGNING content of instance " << &source << " to instance " << this << std::endl;
+    std::cout << "ChatBot Copy Assignment Operator" << std::endl;
 
     // Checking if source has the same memory address as 'this' ChatBot
     if (this == &source)
@@ -68,34 +69,38 @@ ChatBot& ChatBot::operator=(const ChatBot &source)
     delete _image;
 
     //Copying data from source's attributes to 'this' ChatBot's attributes
-    *_image = *source._image;
-    *_chatLogic = *source._chatLogic;
-    *_rootNode = *source._rootNode;
-    *_currentNode = *source._currentNode;
+    _image = new wxBitmap(*source._image);
+    _chatLogic = source._chatLogic;
+    _rootNode = source._rootNode;
+    _currentNode = source._currentNode;
+    _chatLogic->SetChatbotHandle(this);
+
     return *this;
 }
 
 // Move Constructor
 ChatBot::ChatBot(ChatBot &&source)
 {
-    std::cout << "MOVING (constructor) instance " << &source << " to instance " << this << std::endl;
+    std::cout << "ChatBot Move Constructor" << std::endl;
 
     //Moving memory addresses of source to 'this' ChatBot
     _image = source._image;
     _chatLogic = source._chatLogic;
     _rootNode = source._rootNode;
     _currentNode = source._currentNode;
+    _chatLogic->SetChatbotHandle(this);
 
-    //Assigning all source's attributes to null pointers, _image will be deleted once it is out of scope
+    //Assigning all source's attributes to null pointers
     source._chatLogic = nullptr;
     source._rootNode = nullptr;
     source._currentNode = nullptr;
+    source._image = NULL;
 }
 
 // Moving Assignment Operator
 ChatBot& ChatBot::operator=(ChatBot &&source)
 {
-    std::cout << "MOVING (assign) instance " << &source << " to instance " << this << std::endl;
+    std::cout << "Move Assignment Operator" << std::endl;
 
     // Checking if source has the same memory address as 'this' ChatBot
     if (this == &source)
@@ -109,11 +114,13 @@ ChatBot& ChatBot::operator=(ChatBot &&source)
     _chatLogic = source._chatLogic;
     _rootNode = source._rootNode;
     _currentNode = source._currentNode;
+    _chatLogic->SetChatbotHandle(this);
 
-    //Assigning all source's attributes to null pointers, _image will be deleted once it is out of scope
+    //Assigning all source's attributes to null pointers
     source._chatLogic = nullptr;
     source._rootNode = nullptr;
     source._currentNode = nullptr;
+    source._image = NULL;
 
     return *this;
 }

@@ -6,47 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/chatbot.cpp
-iostream
--
-random
--
-algorithm
--
-ctime
--
-chatlogic.h
-/Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/chatlogic.h
-graphnode.h
-/Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/graphnode.h
-graphedge.h
-/Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/graphedge.h
-chatbot.h
-/Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/chatbot.h
-
 /Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/chatbot.h
 wx/bitmap.h
 -
 string
 -
 
-/Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/chatgui.cpp
-wx/filename.h
--
-wx/colour.h
--
-wx/image.h
--
-string
--
-chatbot.h
-/Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/chatbot.h
-chatlogic.h
-/Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/chatlogic.h
-chatgui.h
 /Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/chatgui.h
-
-/Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/chatgui.h
+memory
+-
 wx/wx.h
 -
 
@@ -81,12 +49,6 @@ string
 -
 chatgui.h
 /Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/chatgui.h
-
-/Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/graphedge.cpp
-graphnode.h
-/Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/graphnode.h
-graphedge.h
-/Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/graphedge.h
 
 /Users/adam/Documents/Udacity/C++ Projects/CppND-Memory-Management-Chatbot/src/graphedge.h
 vector
